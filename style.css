@@ -1,0 +1,141 @@
+
+
+
+* {    
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1E1E28;
+    font-family: 'Montserrat';
+}
+
+a {
+    text-decoration: none;
+}
+    
+
+li {
+    list-style: none;
+}
+
+.block-1 {
+    background-image: url(img/block1-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 40px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.menu-list {
+    margin-left:55px;
+}
+
+.menu-link {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    padding: 2px 0;
+    opacity: 0.3;
+}
+
+.menu-link_active {
+    border-bottom: solid 2px #c81400;
+    opacity: 1;
+}
+
+.menu-link:hover {
+    opacity: 1
+}
+
+.call {
+    margin-top: 55px;
+}
+
+.call_number {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.72px;
+}
+
+.call_back {
+    opacity: 0.3;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.call_back:hover {
+    opacity: 1;
+}
+
+.block-1__content {
+    margin: 5% auto;
+    width: 70%;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+.button {
+    margin-top: 10px;
+    color: #fffefe;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: #c81400;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 23px;
+}
+
+.fa-arrow-right {
+    font-weight: lighter;
+    margin-left: 10px;
+}
+
+.block-1__content_p {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+}
