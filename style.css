@@ -28,9 +28,9 @@ li {
 }
 
 .container {
-    max-width: 1200px;
-    padding-left: 5%;
-    padding-right: 5%;
+    max-width: 1080px;
+    padding-left: 4.5%;
+    padding-right: 4.5%;
     margin: 0 auto;
 }
 
@@ -46,11 +46,15 @@ header {
 .menu {
     display: flex;
     justify-content: space-between;
-    margin-top: 55px;
+    margin-top: 50px;
 }
 
 .menu-list {
     margin-left:55px;
+}
+
+.menu-list:first-child {
+    margin-left: 0;
 }
 
 .menu-link {
@@ -139,3 +143,148 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 1.25px;
 }
+
+main {
+ 
+}
+
+.main__headings {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+    color: #fffefe;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.grid-portfolio {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 350px 350px 350px;
+    grid-gap: 10px;
+    margin-bottom: 58px;
+
+}
+
+.grid-projects {
+    padding: 51px 59px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.grid-projects:hover {
+    filter: grayscale(0);
+}
+
+.grid-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+.see-projects {
+    width: 290px;
+    height: 50px;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    line-height: 50px;
+    color: #fffefe;
+    /*font-family: "Museo Sans Cyrl -300";*/
+    font-size: 20px;
+    font-weight: 400;
+    background-color: transparent;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 70px;
+
+}
+
+.see-projects:hover {
+    opacity: 0.7;
+}
+
+
+.fz1 {
+    height: 679px;
+    background-image:  url(img/backgroundMTD2.png);
+    background-position:  center center;
+    background-repeat:  no-repeat;
+    background-size: cover;
+}
+
+
+
+@media (max-width: 1000px) {
+    .menu-list {
+        margin-left:20px;
+    }
+
+    .fz1-back {
+         background-position: top right -150px;
+    }
+}
+
+.slider {
+    position: relative;
+    margin: 0 auto;
+    height: 350px;
+    width: 535px;
+}
+
+.slider-img {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    animation: imageAnimation 24s linear infinite 0s;
+
+}
+
+.image2 {
+    animation-delay: 6s;
+
+}
+
+.image3 {
+    animation-delay: 12s;
+    
+}
+
+.image4 {
+    animation-delay: 18s;
+}
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    8% {
+        opacity: 1;
+        transform: scale(1.05);
+        animation-timing-function: ease-out;
+    }
+    17% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    25% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
