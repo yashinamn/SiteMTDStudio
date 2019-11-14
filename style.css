@@ -142,8 +142,10 @@ h1 {
     background-color: #c81400;
     display: inline-block;
     box-sizing: border-box;
-    padding: 0 23px;
+    padding: 0 20px;
+    letter-spacing: -0.2px;
     transition-duration: 0.4s;
+   
 }
 
 .button:hover {
@@ -161,15 +163,16 @@ h1 {
     color: #fffefe;
     text-align: center;
     margin-top: 150px;
+    margin-bottom: 50px;
 }
 
 .grid {
-    margin-top: 50px;
+    
     display: grid;
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 350px 350px 350px;
     grid-gap: 10px;
-    margin-bottom: 58px;
+    
 }
 
 .grid__item {
@@ -207,7 +210,7 @@ h1 {
     font-size: 20px;
     font-weight: 400;
     background-color: transparent;
-    margin: 0 auto;
+    margin: 40px auto 0;
     display: block;
     margin-bottom: 70px;
     transition-duration: 0.3s;
@@ -296,8 +299,6 @@ h1 {
     height: 46px;
 }
 
-
-
 .button_services {
     border:none;
     background: transparent;
@@ -305,6 +306,79 @@ h1 {
     margin-top: 50px;
     display: block;
 }
+
+.grid__services_last {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.grid__services_last_heading {
+    /*font-family: "Gilroy - Semibold";*/
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #fff;
+}
+
+
+.grid__services_last_text {
+    color: #fffefe;
+    /*font-family: "Museo Sans Cyrl -300";*/
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 370px;
+}
+
+.button_services_last {
+    max-width: 248px;
+    display: block;
+}
+
+.grid_calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 350px;
+    grid-gap: 7px;
+}
+
+.grid_calculator_item {
+    background-color: #282832;
+    padding: 57px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button_sale {
+    border:none;
+    background: transparent;
+    margin-left: -23px;
+    display: block;
+}
+
+.button_square {
+    border:none;
+    background: rgb(255, 255, 255, 0.1);
+    display: block;
+}
+
+.strelka-img-4 {
+    margin-left: 85px;
+}
+
+
+.VR {
+    height: 679px;
+    background-image:  url(img/backgroundMTD3.jpg);
+    background-position:  center center;
+    background-repeat:  no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+}
+
 
 
 @media (max-width: 1000px) {
