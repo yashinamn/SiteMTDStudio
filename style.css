@@ -528,8 +528,23 @@ color: rgba(255, 254, 254, 0.3);
     padding-top: 300px;
 }
 
+.adventages-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 54px 0;
+}
 
+.adventage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.subheading_advent {
+    text-align: left;
+    width: auto;
+    margin: 0;
+}
 @media (max-width: 1000px) {
     .menu__list {
         margin-left:25px;
